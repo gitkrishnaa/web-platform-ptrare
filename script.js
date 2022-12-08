@@ -5,7 +5,7 @@ let input1=document.createElement("input");
 let head1=document.createElement("h1");
 head1.innerText="heading1"
 head1.style.display="none";
-
+let input2=document.createElement("input");
 
 let btn1=document.createElement("button");btn1.innerText="done";
 btn1.addEventListener("click",()=>{
