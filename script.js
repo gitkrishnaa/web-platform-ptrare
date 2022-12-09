@@ -158,6 +158,41 @@ div1.style.backgroundColor="red";
 }
 
 
+// <!DOCTYPE html>
+// <html lang="en">
+//   <head>
+//     <title>Home</title>
+//     <meta charset="UTF-8" />
+//     <meta name="viewport" content="width=device-width" />
+//     <!--
+//       Need a visual blank slate?
+//       Remove all code in `styles.css`!
+//     -->
+//     <link rel="stylesheet" href="styles.css" />
+//     <script src="script.js"></script>
+//   </head>
+//   <body>
+//   <div class="main">
+  
+//   <div class="edit">
+
+//     <div>
+//   <button onclick="head1()">add heading</button>
+//   <button onclick="subhead1()">add subhead</button>
+//   <div>
+//     <div> <button onclick="box1()">add box</button></div>
+//     <div id="editorBox1"></div>
+//   </div>
+//   <div id="editor-head"></div>
+// </div>
+//   </div>
+//   <div class="preview" id="pre1"></div>
+  
+  
+
+
+//   </body>
+// </html>
 
 
 
