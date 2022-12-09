@@ -23,7 +23,19 @@
       justify-content: center;
       /* align-items: center; */
       
+      
       }
+      .preview1{
+  
+        background-color: rgb(23, 158, 158);
+        width: 75%;
+        height: 100vh;
+        /* display: flex; */
+        justify-content: center;
+        /* align-items: center; */
+       
+        
+        }
       .preview>div,.preview>div>h1,.preview>div>h5{
         padding: 0px;
         margin: 0px;
