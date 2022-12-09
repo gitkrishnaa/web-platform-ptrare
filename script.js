@@ -119,6 +119,11 @@ console.log(arrayOfDiv1Id,"edit at line near 116")
 
   let preview=document.getElementById("pre1") //div in preview
   preview.appendChild(div1);
+  // apply css on div1
+div1.style.display="flex";
+div1.style.padding="20px";
+div1.style.margin="5px";
+
     //// creating editor for div1  - div1\\\\\\\\\\\\\\
   let editor1 = document.createElement('div');
   let editorBox1=document.getElementById("editorBox1")
@@ -146,6 +151,43 @@ console.log(arrayOfDiv1Id,"edit at line near 116")
    div1.style.height=div1_height.value;
   })
   
+
+ // div box margin\\\\\\
+ let div1_margin = document.createElement('input');
+ editor1.appendChild(div1_margin)
+ div1_margin.placeholder="margin"
+ div1_margin.addEventListener("input",()=>{
+  div1.style.margin=div1_margin.value;
+ })
+  // div box padding\\\\\\
+  let div1_padding = document.createElement('input');
+  editor1.appendChild(div1_padding)
+  div1_padding.placeholder="padding"
+  div1_padding.addEventListener("input",()=>{
+   div1.style.padding=div1_padding.value;
+  })
+  
+   // div box image\\\\\\
+   let div1_background_image = document.createElement('input');
+   editor1.appendChild(div1_background_image)
+   div1_background_image.placeholder="image link"
+  
+   div1_background_image.addEventListener("input",()=>{
+    div1.style.backgroundImage=`url(${div1_background_image.value})`
+    console.log(div1_background_image.value,"image linker")
+   })
+   div1_background_image.backgroundRepeat = "no-repeat";
+   
+  //  let div1_background_image2 = document.createElement('input');
+  //  let div1_background_image3 = document.createElement('input');
+  //  editor1.appendChild(div1_background_image1)
+  //  editor1.appendChild(div1_background_image2)
+  //  editor1.appendChild(div1_background_image3)
+  //  div1_background_image1.type="radio";
+  //  div1_background_image2.type="radio";
+  //  div1_background_image3.type="radio";
+ 
+
    /////// div box background color\\\\\\
    let div1_color_tab = document.createElement('span');
    editor1.appendChild(div1_color_tab);
@@ -161,6 +203,22 @@ console.log(arrayOfDiv1Id,"edit at line near 116")
   div1_color.addEventListener("input",()=>{
    div1.style.backgroundColor=div1_color.value;
   })
+     /////// div box border radiue\\\\\\
+     let div1_borderRadius_name = document.createElement('span');
+     editor1.appendChild(div1_borderRadius_name);
+     div1_borderRadius_name.innerText="radius"
+  
+  
+  
+    let div1_borderRadius = document.createElement('input');
+    editor1.appendChild(div1_borderRadius);
+    div1_borderRadius.type="range";
+    div1_borderRadius.min="1px";
+    div1_borderRadius.max="500px";
+    // div1_color.placeholder="background color"
+    div1_borderRadius.addEventListener("input",()=>{
+     div1.style.borderRadius=div1_borderRadius.value+"px";
+    })
 //////////adding delete button\\\\\\\\\\\\\
   let div1_and_editor_delete = document.createElement('button');
   editor1.appendChild(div1_and_editor_delete)
