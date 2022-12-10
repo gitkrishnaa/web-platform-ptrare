@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Other page</title>
+    <title>Home</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <style>
+    .edit{
+      background-color:red;
+    }
+    
+    </style>
+    <script src="script.js"></script>
   </head>
   <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/page2.html" aria-current="page">Other page</a>
-    </nav>
-    <main>
-      <h1>My other page</h1>
-    </main>
+  <div class="main">
+  
+  <div class="edit">
+
+    <div>
+  <button onclick="head1()">add heading</button>
+  <button onclick="subhead1()">add subhead</button>
+  <div>
+    <div> <button onclick="box1()">add box</button></div>
+    <div id="editorBox1"></div>
+  </div>
+  <div id="editor-head"></div>
+</div>
+  </div>
+  <div class="preview" id="pre1"></div>
+  <!-- <div class="preview1" id="pre2"></div> -->
+  
+
+
   </body>
 </html>
